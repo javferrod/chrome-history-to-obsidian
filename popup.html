@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chrome to Obsidian</title>
+    <style>
+      body {
+        min-width: 300px;
+        min-height: 150px;
+        font-family: 'Arial', sans-serif;
+        margin: 0; 
+        padding: 20px;
+        background-color: #f4f4f9;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h3 {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        color: #444;
+      }
+      button {
+        margin: 5px 0;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      #status {
+        margin-top: 15px;
+        color: #666;
+        font-size: 0.9em;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Daily Chrome History</h3>
+    <button id="send-btn">To Daily</button>
+    <button id="copy-btn">Copy to Clipboard</button>
+    <div id="status"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

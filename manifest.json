@@ -1,0 +1,19 @@
+{
+  "name": "Daily Chrome History to Obsidian",
+  "description": "Fetch today's browsing history and export it to the Daily note in Obsidian.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": [
+    "history",      
+    "clipboardWrite" 
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
