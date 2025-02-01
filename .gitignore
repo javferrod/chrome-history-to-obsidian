@@ -1,0 +1,10 @@
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Directories
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
